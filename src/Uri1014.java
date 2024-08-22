@@ -8,13 +8,9 @@ public class Uri1014 {
 
         int cons = sc.nextInt();
         double dist = sc.nextDouble();
-
         double calc = cons / dist;
-        String km = "km/l";
 
-        System.out.printf("%.3f%n", calc);
-        System.out.print(km);
-
+        System.out.printf("%.3f km/l%n", calc);
         sc.close();
     }
 }
