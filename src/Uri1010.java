@@ -1,29 +1,28 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Uri1010 {
     public static void main(String[] args) {
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
         int codA;
-        int quantA;
-        boolean valueA;
+        double quantA;
+        double valueA;
         codA = sc.nextInt();
-        quantA = sc.nextInt();
-//        sc.nextLine();
-        valueA = sc.hasNextDouble();
+        quantA = sc.nextDouble();
+        valueA = sc.nextDouble();
 
         int codB;
-        int quantB;
-        boolean valueB;
-        sc.nextLine();
+        double quantB;
+        double valueB;
         codB = sc.nextInt();
-
-        quantB = sc.nextInt();
-        valueB = sc.hasNextDouble();
+        quantB = sc.nextDouble();
+        valueB = sc.nextDouble();
 
         double calc;
 
-//        calc = (boolean) quantA * valueA + quantB * valueB;
+        calc = quantA * valueA + quantB * valueB;
 
         System.out.printf("VALOR A PAGAR = %.2f%n", calc);
 
