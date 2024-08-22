@@ -20,12 +20,9 @@ public class Uri1010 {
         quantB = sc.nextDouble();
         valueB = sc.nextDouble();
 
-        double calc;
+        double calc = quantA * valueA + quantB * valueB;
 
-        calc = quantA * valueA + quantB * valueB;
-
-        System.out.printf("VALOR A PAGAR = %.2f%n", calc);
-
+        System.out.printf("VALOR A PAGAR: R$%.2f%n", calc);
         sc.close();
     }
 }
