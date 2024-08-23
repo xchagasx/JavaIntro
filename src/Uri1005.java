@@ -8,8 +8,9 @@ public class Uri1005 {
 
         double notaA = sc.nextDouble();
         double notaB = sc.nextDouble();
+        double pesos = 3.5 + 7.5;
 
-        double calc = (notaA + notaB) / 2.0;
+        double calc = ((notaA * 3.5) + (notaB * 7.5)) / pesos;
 
         System.out.printf("MEDIA = %.5f%n", calc);
 
