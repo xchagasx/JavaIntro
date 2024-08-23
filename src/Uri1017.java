@@ -1,6 +1,6 @@
 import java.util.Locale;
 import java.util.Scanner;
-
+//nice branch
 public class Uri1017 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
