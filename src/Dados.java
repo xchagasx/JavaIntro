@@ -18,7 +18,7 @@ public class Dados {
 
         double media = ((double) idade1 + idade2) / 2;
 
-        System.out.printf( "A idade média de Maria e Joaquim é de %.1f%n anos", media);
+        System.out.printf( "A idade média de %s e %s é de %.1f%n anos", nome1, nome2, media);
 
         sc.close();
     }
