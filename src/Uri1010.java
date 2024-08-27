@@ -22,7 +22,7 @@ public class Uri1010 {
 
         double calc = quantA * valueA + quantB * valueB;
 
-        System.out.printf("VALOR A PAGAR: R$%.2f%n", calc);
+        System.out.printf("VALOR A PAGAR: R$ %.2f%n", calc);
         sc.close();
     }
 }
