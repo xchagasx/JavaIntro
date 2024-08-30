@@ -6,24 +6,87 @@ public class Uri1021 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double n = sc.nextDouble();
+        double N;
+        int quociente, resto, nota, moeda;
 
-        double calc100 = (int) n / 100;
-        double calc50 = (n % 100) / 50;
-        double calc20 = (n % 50) / 20;
-        double calc10 = (n % 10) / 10;
-        double calc5 = (n % 10) / 5;
-        double calc2 = (n % 5) / 2;
-        double calc1 = Math.abs(2 - (n % 5));
+        N = sc.nextDouble();
+
+        // Vamos multiplicar N por 100 e forçar a conversão para int.
+        // Desse modo, por exemplo, 576.73 vai se tornar 57673
+
+        // Vamos tambem somar 0.5 antes de converter, para assegurar
+        // que o numero seja devidamente arredondado, pois o tipo double
+        // as vezes da problema de arredondamento (por exemplo: se digitarmos
+        // 576.81 e multiplicarmos por 100, o resultado sera 57680.99999999,
+        // dai o casting resultaria em 57680 e nao 57681 como desejado)
+
+        resto = (int) (N * 100.0 + 0.5);
 
         System.out.println("NOTAS:");
-        System.out.printf("%.0f%n", calc100, " nota(s) de R$ 100,00");
-        System.out.printf("%.0f%n", calc50, " nota(s) de R$ 50,00");
-        System.out.printf("%.0f%n", calc20, " nota(s) de R$ 20,00");
-        System.out.printf("%.0f%n", calc10, " nota(s) de R$ 10,00");
-        System.out.printf("%.0f%n", calc5, " nota(s) de R$ 5,00");
-        System.out.printf("%.0f%n", calc2, " nota(s) de R$ 2,00");
-        System.out.printf("%.0f%n", calc1, " nota(s) de R$ 1,00");
+
+        // como multiplicamos o valor por 100 acima, o valor de cada nota
+        // também deverá ser multiplicado por 100 a seguir
+
+        nota = 100;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        nota = 50;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        nota = 20;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        nota = 10;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        nota = 5;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        nota = 2;
+        quociente = resto / (nota * 100);
+        System.out.println(quociente + " nota(s) de R$ " + nota + ".00");
+        resto = resto % (nota * 100);
+
+        System.out.println("MOEDAS:");
+
+        // o valor de cada moeda deverá ser representado em centavos
+
+        moeda = 100;
+        quociente = resto / moeda;
+        System.out.println(quociente + " moeda(s) de R$ 1.00");
+        resto = resto % moeda;
+
+        moeda = 50;
+        quociente = resto / moeda;
+        System.out.println(quociente + " moeda(s) de R$ 0.50");
+        resto = resto % moeda;
+
+        moeda = 25;
+        quociente = resto / moeda;
+        System.out.println(quociente + " moeda(s) de R$ 0.25");
+        resto = resto % moeda;
+
+        moeda = 10;
+        quociente = resto / moeda;
+        System.out.println(quociente + " moeda(s) de R$ 0.10");
+        resto = resto % moeda;
+
+        moeda = 5;
+        quociente = resto / moeda;
+        System.out.println(quociente + " moeda(s) de R$ 0.05");
+        resto = resto % moeda;
+
+        System.out.println(resto + " moeda(s) de R$ 0.01");
 
         sc.close();
     }
