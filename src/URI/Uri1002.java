@@ -1,17 +1,19 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Uri1003 {
+public class Uri1002 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        double raio = sc.nextDouble();
+        double n = 3.14159;
 
-        int sum = a + b;
+        double area =  n * Math.pow(raio, 2);
 
-        System.out.println("SOMA = " + sum);
+        System.out.printf("A= %.4f%n", area);
 
         sc.close();
     }

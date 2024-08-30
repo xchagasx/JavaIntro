@@ -1,3 +1,5 @@
+package URI;
+
 import java.util.Locale;
 import java.util.Scanner;
 //nice branch
