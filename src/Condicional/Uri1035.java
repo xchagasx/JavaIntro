@@ -16,15 +16,13 @@ public class Uri1035 {
 
         int sumAB = A + B;
         int sumCD = C + D;
+        int parA = A % 2;
 
-        if(B > C && D > A && sumCD > sumAB) {
-            if (C > 0 && D > 0 && A % 2 == 0) {
-                System.out.println("Valores Aceitos");
-            }
+        if (parA == 0 && B > C && D > A && sumCD > sumAB && C > 0 && D > 0) {
+                System.out.println("Valores aceitos");
         } else {
             System.out.println("Valores nao aceitos");
         }
-
         sc.close();
     }
 }
