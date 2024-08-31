@@ -1,5 +1,4 @@
 package Condicional;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -13,11 +12,11 @@ public class Ex2 {
         b = sc.nextInt();
         c = sc.nextInt();
 
-        if(a < b && a < c || a == b || a == c) {
+        if(a <= b && a <= c) {
             System.out.println("MENOR = " + a);
-        } else if (b < a && b < c || b == c) {
+        } else if (b <= a && b <= c) {
             System.out.println("MENOR = " + b);
-        } else if (c < a && c < b) {
+        } else {
             System.out.println("MENOR = " + c);
         }
         sc.close();
