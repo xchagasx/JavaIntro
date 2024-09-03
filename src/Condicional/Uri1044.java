@@ -17,7 +17,6 @@ public class Uri1044 {
         } else {
             System.out.println("Nao sao Multiplos");
         }
-
         sc.close();
     }
 }
