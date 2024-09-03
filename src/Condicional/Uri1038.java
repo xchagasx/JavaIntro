@@ -1,6 +1,4 @@
 package Condicional;
-
-import javax.swing.plaf.synth.SynthTextAreaUI;
 import java.util.Locale;
 import java.util.Scanner;
 
