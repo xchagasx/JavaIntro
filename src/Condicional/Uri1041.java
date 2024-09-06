@@ -14,6 +14,10 @@ public class Uri1041 {
 
         if (x == 0.0 && y == 0.0) {
             System.out.println("Origem");
+        } else if (x == 0.0 && y > 0.0 || x == 0.0 && y < 0.0) {
+            System.out.println("Eixo Y");
+        } else if (y == 0.0 && x > 0.0 || y == 0.0 && x < 0.0) {
+            System.out.println("Eixo X");
         } else if (x >= 0.1 && y >= 0.1) {
             System.out.println("Q1");
         } else if (x <= -0.1 && y >= 0.0) {
