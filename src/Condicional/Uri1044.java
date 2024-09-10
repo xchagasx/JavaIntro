@@ -12,7 +12,7 @@ public class Uri1044 {
         A = sc.nextInt();
         B = sc.nextInt();
 
-        if (B % A == 0) {
+        if (A % B == 0 || B % A == 0) {
             System.out.println("Sao Multiplos");
         } else {
             System.out.println("Nao sao Multiplos");
