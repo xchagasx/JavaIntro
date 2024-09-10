@@ -21,26 +21,30 @@ public class Uri1045 {
 
         if (A >= bc) {
             System.out.println("NAO FORMA TRIANGULO");
+            System.out.println(A + " " + B + " " + C);
         } else if (A2 == bc2) {
             System.out.println("TRIANGULO RETANGULO");
-        } else if (A2 > bc2 || A == B || B == C || C == A) {
+            System.out.println(A2 + " " + B2 + " " + C2);
+        } else if (A2 > bc2) {
             System.out.println("TRIANGULO OBTUSANGULO");
-            System.out.println("TRIANGULO ISOSCELES");
-        } else if (A2 < bc2 && A == B && B == C && C == A) {
-            System.out.println("TRIANGULO ACUTANGULO");
-            System.out.println("TRIANGULO EQUILATERO");
+//            System.out.println("TRIANGULO ISOSCELES");
+            System.out.println(A2 + " " + B2 + " " + C2);
         } else if (A2 < bc2) {
             System.out.println("TRIANGULO ACUTANGULO");
-            System.out.println("TRIANGULO EQUILATERO");
-            if (A == B || B == C || C == A) {
-                System.out.println();
-            } else {
-                System.out.println(" ");
-            }
-
+//            System.out.println("TRIANGULO EQUILATERO");
             System.out.println(A2 + " " + B2 + " " + C2);
-
+        }
+//        else if (A2 < bc2) {
+//            System.out.println("TRIANGULO ACUTANGULO");
+//            System.out.println("TRIANGULO EQUILATERO");
+//            System.out.println(A2 + " " + B2 + " " + C2);
+//            if (A == B || B == C || C == A) {
+//                System.out.println();
+//            } else {
+//                System.out.println(" ");
+//            }
+        System.out.println(A2 + " " + B2 + " " + C2);
             sc.close();
         }
     }
-}
+//}
