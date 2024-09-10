@@ -14,7 +14,7 @@ public class Uri1047 {
         hf = sc.nextInt();
         mf = sc.nextInt();
 
-        
+
 
         sc.close();
     }
