@@ -8,26 +8,21 @@ public class Uri1117 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        double nota = sc.nextDouble();
-        int acc = 0;
-        int i = 0;
-        double media;
-
-        while (nota >= 0 && nota <= 10) {
-            acc = acc + 1;
-            i = (int) nota + i;
-            if (acc == 2) {
-                media = i / acc;
-                System.out.printf("media = %.2f%n", media);
-            } else if (acc >= 3) {
-                sc.close();
-            }
-            nota = sc.nextDouble();
-        }
-        if (nota < 0 || nota > 10) {
+        double nota1 = sc.nextDouble();
+        while (nota1 < 0.0 || nota1 > 10.0) {
             System.out.println("nota invalida");
+            nota1 = sc.nextDouble();
         }
-        nota = sc.nextDouble();
+
+        double nota2 = sc.nextDouble();
+        while (nota2 < 0.0 || nota2 > 10.0) {
+            System.out.println("nota invalida");
+            nota2 = sc.nextDouble();
+        }
+
+        double media = (nota1 + nota2) / 2.0;
+        System.out.printf("media = %.2f%n", media);
+
         sc.close();
     }
 }
