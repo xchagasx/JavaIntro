@@ -11,20 +11,23 @@ public class Uri1117 {
         double nota = sc.nextDouble();
         int acc = 0;
         int i = 0;
-        double media = 0;
+        double media;
 
         while (nota >= 0 && nota <= 10) {
             acc = acc + 1;
             i = (int) nota + i;
-            if (acc == 2 && nota >= 0) {
+            if (acc == 2) {
                 media = i / acc;
-                System.out.println(media);
+                System.out.printf("media = %.2f%n", media);
+            } else if (acc >= 3) {
                 sc.close();
-            } else {
-                System.out.println("nota invalida");
-                nota = sc.nextDouble();
             }
+            nota = sc.nextDouble();
         }
+        if (nota < 0 || nota > 10) {
+            System.out.println("nota invalida");
+        }
+        nota = sc.nextDouble();
         sc.close();
     }
 }
