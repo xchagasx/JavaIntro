@@ -1,5 +1,4 @@
 package Repetitivas;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,27 +14,25 @@ public class Uri1134 {
 
         while (tipoCombust < 4 || tipoCombust > 4) {
             if (tipoCombust > 4) {
-//                System.out.println("MUITO OBRIGADO");
                 tipoCombust = sc.nextInt();
             }
             else if (tipoCombust == 1) {
-                alcool = alcool + 1;
+                alcool++;
                 tipoCombust = sc.nextInt();
             }
             else if (tipoCombust == 2) {
-                gasolina = gasolina + 1;
-
+                gasolina++;
                 tipoCombust = sc.nextInt();
             }
             else if (tipoCombust == 3) {
-                diesel = diesel + 1;
+                diesel++;
                 tipoCombust = sc.nextInt();
             }
-            System.out.println("MUITO OBRIGADO");
-            System.out.println("Alcool: " + alcool);
-            System.out.println("Gasolina: " + gasolina);
-            System.out.println("Diesel: " + diesel);
         }
+        System.out.println("MUITO OBRIGADO");
+        System.out.println("Alcool: " + alcool);
+        System.out.println("Gasolina: " + gasolina);
+        System.out.println("Diesel: " + diesel);
         sc.close();
     }
 }
