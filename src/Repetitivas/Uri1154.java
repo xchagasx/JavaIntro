@@ -8,18 +8,21 @@ public class Uri1154 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        int age = sc.nextInt();
-        int acc = 0;
-        int index = 0;
-        double media;
+        int x = sc.nextInt();
 
-        while (age > 0) {
-            acc = acc + age;
-            index ++;
-            age = sc.nextInt();
+        while (x != 0) {
+
+            // se for impar, some mais 1
+            if (x % 2 != 0) {
+                x = x + 1;
+            }
+
+            // expressao simplificada: 5 * x + 20
+            int soma = x + x + 2 + x + 4 + x + 6 + x + 8; // 4 + 4 + 2 + 4 + 4 + 4 + 6 + 4 + 8 = 40
+            System.out.println(soma);
+
+            x = sc.nextInt();
         }
-        media = (double) acc / index;
-        System.out.printf("%.2f%n", media);
 
         sc.close();
     }
