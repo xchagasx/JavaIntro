@@ -1,5 +1,4 @@
 package Repetitivas;
-
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -18,22 +17,23 @@ public class Uri1131 {
         int acc = 0;
 
         while (novoGrenal == 1) {
-            while (decisao >= 1 && decisao <= 3 && gols > 0) {
-                if (decisao == 1) {
-                    inter3++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                } else if (decisao == 2) {
-                    gremio2++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                } else if (decisao == 3) {
-                    empate1++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                }
+            while (decisao == 1 || decisao == 2 || decisao == 3) {
+                empate1++;
+                System.out.println("Novo grenal (1-sim 2-não)");
             }
+            novoGrenal = sc.nextInt();
         }
+//        if (decisao == 3) {
+//            inter3 ++;
+//            System.out.println("Novo grenal (1-sim 2-não)");
+//            novoGrenal = sc.nextInt();
+//        } else if (decisao == 2) {
+//            gremio2++;
+//            System.out.println("Novo grenal (1-sim 2-não)");
+//            novoGrenal = sc.nextInt();
+//        } else if (decisao == 1) {
+//            novoGrenal = sc.nextInt();
+//        }
 //
 //                if (novoGrenal == 1) {
 //                    novoGrenal ++;
