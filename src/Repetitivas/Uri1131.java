@@ -1,53 +1,53 @@
 package Repetitivas;
-
-import java.util.Locale;
 import java.util.Scanner;
 
+//nao esqueca de mudar o nome da classe para Main
 public class Uri1131 {
+
     public static void main(String[] args) {
-        Locale.setDefault(Locale.US);
+
         Scanner sc = new Scanner(System.in);
 
-        int decisao, gols;
-        decisao = sc.nextInt();
-        gols = sc.nextInt();
-        int empate1 = 0;
-        int gremio2 = 0;
-        int inter3 = 0;
+        int vitoriasInter = 0;
+        int vitoriasGremio = 0;
+        int empates = 0;
         int novoGrenal = 1;
-        int acc = 0;
 
         while (novoGrenal == 1) {
-            while (decisao >= 1 && decisao <= 3 && gols > 0) {
-                if (decisao == 1) {
-                    inter3++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                } else if (decisao == 2) {
-                    gremio2++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                } else if (decisao == 3) {
-                    empate1++;
-                    System.out.println("Novo grenal (1-sim 2-não)");
-                    novoGrenal = sc.nextInt();
-                }
+            int golsInter = sc.nextInt();
+            int golsGremio = sc.nextInt();
+
+            if (golsInter > golsGremio) {
+                vitoriasInter = vitoriasInter + 1;
             }
+            else if (golsGremio > golsInter) {
+                vitoriasGremio = vitoriasGremio + 1;
+            }
+            else {
+                empates = empates + 1;
+            }
+
+            System.out.println("Novo grenal (1-sim 2-nao)");
+            novoGrenal = sc.nextInt();
         }
-//
-//                if (novoGrenal == 1) {
-//                    novoGrenal ++;
-//                    decisao = sc.nextInt();
-//                    gols = sc.nextInt();
-//                }
-//                System.out.println("Novo grenal (1-sim 2-não)");
-//                novoGrenal = sc.nextInt();
-//            }
-//            while (novoGrenal == 1) {
-//                novoGrenal = acc ++;
-//                decisao = sc.nextInt();
-//                gols = sc.nextInt();
-//            }
+
+        int total = vitoriasGremio + vitoriasInter + empates;
+
+        System.out.println(total + " grenais");
+        System.out.println("Inter:" + vitoriasInter);
+        System.out.println("Gremio:" + vitoriasGremio);
+        System.out.println("Empates:" + empates);
+
+        if (vitoriasInter > vitoriasGremio) {
+            System.out.println("Inter venceu mais");
+        }
+        else if (vitoriasGremio > vitoriasInter) {
+            System.out.println("Gremio venceu mais");
+        }
+        else {
+            System.out.println("Nao houve vencedor");
+        }
+
         sc.close();
     }
 }
