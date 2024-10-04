@@ -7,10 +7,10 @@ public class Uri1078 {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int acc = 0;
+        int acc = 11;
 
-        for (int i = 1; i < n; i++) {
-            System.out.println(i);
+        for (int i = 1; i < acc; i++) {
+            System.out.println(i + " x " + n + " = " + i * n);
         }
 
         sc.close();
