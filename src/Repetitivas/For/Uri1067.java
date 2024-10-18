@@ -9,7 +9,11 @@ public class Uri1067 {
         Scanner sc = new Scanner(System.in);
 
         int x = sc.nextInt();
+        int acc = 0;
 
+        if (x % 2 != 0) {
+             
+        }
         for (int i = 0; i < x; i++) {
             
         }
