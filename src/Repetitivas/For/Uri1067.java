@@ -9,15 +9,16 @@ public class Uri1067 {
         Scanner sc = new Scanner(System.in);
 
         int x = sc.nextInt();
-        int acc = 0;
-
-        if (x % 2 != 0) {
-             
-        }
+        int number;
         for (int i = 0; i < x; i++) {
-            
+            if (x % 2 == 0) { // CASO O NÚMERO SEJA PAR
+                number = x - (x - 1); // SUBTRAIR POR 1
+                System.out.println(number);
+            } else if (x % 2 != 0) { // CASO O NÚMERO SEJA ÍMPAR
+                number = x; // MANTENHA
+                System.out.println(number);
+            }
         }
-
         sc.close();
     }
 }
