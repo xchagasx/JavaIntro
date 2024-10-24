@@ -10,6 +10,7 @@ public class Uri1067 {
 
         int x = sc.nextInt();
         int number = 0;
+        int acc = 2;
 //
         if (x % 2 == 0) { // CASO O NÚMERO SEJA PAR
             number = x - (x - 1); // SUBTRAIR POR 1
@@ -18,10 +19,12 @@ public class Uri1067 {
             number = x - (x - 1); // MANTENHA
             System.out.println(number);
         }
-        for (int i = 0; i > number; i++) {
-            System.out.println(number + 2);
+        for (int i = 0; i < x; i++) {
+            if (i % 2 != 0 && acc < x) {
+                System.out.println(number + acc);
+                acc = acc + 2;
+            }
         }
-//        int sum = 2;
         sc.close();
     }
 }
