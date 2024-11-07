@@ -17,10 +17,12 @@ public class Uri1116 {
             n2 = sc.nextInt();
 
             div = n1 / n2;
-            System.out.println(div);
+            if (div == 0.0) {
+                System.out.println("divisao impossivel");
+            } else {
+                System.out.println(div);
+            }
         }
-
-
         sc.close();
     }
 }
