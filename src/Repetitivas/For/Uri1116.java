@@ -12,12 +12,12 @@ public class Uri1116 {
 
         for (int i = 0; i < n; i++) {
             int n1, n2;
-            int div;
+            double div;
             n1 = sc.nextInt();
             n2 = sc.nextInt();
 
-            div = n1 / n2;
-            if (div == 0.0) {
+            div = (double) n1 / n2;
+            if (n2 == 0) {
                 System.out.println("divisao impossivel");
             } else {
                 System.out.println(div);
