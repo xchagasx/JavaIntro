@@ -12,7 +12,9 @@ public class Uri1132 {
         int n2 = sc.nextInt();
 
         for (int i = 0; i < n1; i++) {
-            
+            if (n1 > n2 || n2 > n1) {
+                
+            }
         }
 
         sc.close();
