@@ -13,7 +13,7 @@ public class Uri1132 {
 
         for (int i = 0; i < n1; i++) {
             if (n1 > n2 || n2 > n1) {
-                
+                System.out.println("Hello Guyz");
             }
         }
 
