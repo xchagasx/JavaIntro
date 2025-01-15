@@ -6,10 +6,27 @@ public class Uri1094 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int numberAnimal = sc.nextInt();
-        String letraAnimal = sc.nextLine();
+        int cont = sc.nextInt();
+        int numberAnimal;
+        String letraAnimal;
+        int calcTotal;
 
-        System.out.println(numberAnimal + " " + letraAnimal);
+        for (int i = 0; i < cont; i++) {
+            numberAnimal = sc.nextInt();
+            letraAnimal = sc.next();
+            System.out.println(numberAnimal + " " + letraAnimal);
+
+//            for (int x = 0; x < cont; x++) {
+//
+//            }
+//            if (numberAnimal > 0) {
+//                calcTotal = numberAnimal;
+//                System.out.println("Total = " + calcTotal);
+//            }
+        }
+
+
+
 
         sc.close();
     }
