@@ -11,16 +11,16 @@ public class Uri1101 {
         n = sc.nextInt();
         int sum = 0;
 
-        do {
+        while (n != 0) {
             for (int i = n; i <= m; i++) {
                 sum = sum + i;
                 System.out.print(i + " ");
             }
             System.out.println("Sum=" + sum);
-            sum = 0;
             m = sc.nextInt();
             n = sc.nextInt();
-        } while (n != 0 && n > 0);
+            sum = 0;
+        }
 
         sc.close();
     }
